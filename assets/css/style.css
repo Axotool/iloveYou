@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&family=Quicksand:wght@300&display=swap');
+
+
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  min-height: 100vh;
+  box-sizing: border-box;
+  background-image: linear-gradient(to bottom, #333, #444); /* Fondo oscuro con degradado */
+  background-size: 100% 300px;
+  background-position: 0% 100%;
+}
+
+.container {
+  max-width: 90%; /* Ancho máximo del contenedor para dispositivos móviles */
+  margin: 20px auto;
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.title {
+  text-align: center;
+  color: #fff;
+  padding: 15px;
+  background-color: #333;
+  border-radius: 10px 10px 0 0;
+}
+
+.title h1 {
+  font-size: 18px; /* Tamaño de fuente para dispositivos móviles */
+  margin-bottom: 10px;
+}
+
+.title p {
+  padding-top: 10px;
+  font-size: 14px; /* Tamaño de fuente para dispositivos móviles */
+}
+
+.sub {
+  text-align: center;
+  color: #333;
+  padding: 15px;
+}
+
+.sub h3 {
+  font-size: 16px; /* Tamaño de fuente para dispositivos móviles */
+  margin-bottom: 10px;
+}
+
+.highlight {
+  color: crimson;
+  font-style: italic;
+}
+
+p {
+  margin-bottom: 15px;
+}
+
+/* Media queries para dispositivos móviles */
+@media only screen and (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+  .title {
+    padding: 10px;
+  }
+  .sub {
+    padding: 10px;
+  }
+  p {
+    font-size: 12px;
+  }
+}
+
+
+
+  .img-responsive {
+    padding-left: 4rem;
+    max-width: 100%; /* Anchura máxima de la imagen */
+    height: 300px; /* Altura automática para mantener la proporción */
+    margin: 20px auto; /* Margen para centrar la imagen */
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .img-responsive {
+      max-width: 90%; /* Anchura máxima de la imagen en dispositivos móviles */
+    }
+  }
